@@ -6,7 +6,7 @@ if (uri[0] != "h") {
 
 const fs = require('fs') //get the methods in the fs package
 //if you wanna add more files, just put a comma after the filename (array)
-const commit_file = ['TwoCatz/index.js']
+const commit_file = ['twocatz/index.js']
 
 for(var i = 0; i < commit_file.length; i++) {
     var a = commit_file[i];
@@ -38,7 +38,7 @@ try {
           throw new Error("Sorry! We couldn't find one or both of the cat pictures. Make sure you encoded in BASE64!")
       }
 
-  })().catch( e => { console.error(e) })
+  })().catch( e => { console.error("Try again! Did you install your npm packages? We got this error when trying to make a request: " + e); process.exit(1) })
 } catch (e) {
   throw new Error("You have not added your function url as a secret!");
 }

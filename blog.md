@@ -1,7 +1,6 @@
 # [Replace this with your project title]
 
 ## About Me
-adsfafdadsf
 
 ## The Premise
 
